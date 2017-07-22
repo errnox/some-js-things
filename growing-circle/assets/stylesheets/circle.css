@@ -1,0 +1,12 @@
+.growing-circle {
+  background-color: #AFEFAF;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  padding-top: 28px;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="public/stylesheets/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="public/stylesheets/app.css" type="text/css" />
+    <meta charset="utf-8" />
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+	<button type="button" id="generate-data-button" class="btn btn-secondary">Generate data</button>
+        <div class="col col-md-12" id="main-content">
+	  <hr class="invisible" />
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="public/javascripts/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="public/javascripts/underscore-min.js"></script>
+    <script type="text/javascript" src="public/javascripts/backbone-min.js"></script>
+    <script type="text/javascript" src="public/javascripts/backbone.localStorage-min.js"></script>
+    <script type="text/javascript" src="public/javascripts/app.js"></script>
+
+    <script type="text/template" id="item-template">
+      <div class="row panel panel-default panel-body">
+        <p class="editable-field"><%- name %></p>
+	<input type="text" value="<%- name %>" data-field-name="name" class="input-form-element hidden field-input" />
+        <p class="editable-field"><%- price %></p>
+	<input type="text" value="<%- price %>" data-field-name="price" class="input-form-element hidden field-input" />
+	<div class="inner-items"></div>
+      </div>
+    </script>
+
+  </body>
+</html>

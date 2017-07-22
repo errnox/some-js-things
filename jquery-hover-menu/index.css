@@ -1,0 +1,62 @@
+#content {
+    display: block;
+}
+
+#mainContent {
+    overflow: hidden;
+    background-color: #0000FF;
+    height: 100%;
+    padding: 10px;
+    -moz-transition: all .5s;
+    -moz-transform: scale(1);
+}
+
+#mainContent.scaled {
+    -moz-transition: all .5s;
+    -moz-transform: scale(.75) perspective(800px);
+}
+
+#hoverMenu {
+    float: left;
+    width: 0;
+    height: 100%;
+    background-color: #00FF00;
+    padding: 0;
+    -moz-transition: all .5s;
+    -moz-transform: translateX(-215px);
+}
+
+#hoverMenu.hidden {
+    width: 200px;
+    padding: 10px;
+    background-color: pink;
+    -moz-transition: all .5s;
+    -moz-transform-origin: -50% 50%;
+    -moz-transform: perspective(800px) rotateY(15deg);
+}
+
+#hoverLine {
+    background-color: #FF0000;
+    border-radius: 0 100px 100px 0;
+    position: fixed;
+    top: 50%;
+    z-index: 999999;
+}
+
+#hoverLineContent {
+    background-color: yellow;
+    border-radius: 100px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 15pt;
+}
+
+#content {
+    background-color: #000000;
+    height: 100%;
+}
+
+#body {
+    background-color: #000000;
+    top: 0;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Reddit API</title>
+    <link rel="stylesheet" href="public/css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="public/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="public/css/index.css" type="text/css" />
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+
+
+    <!-- Modal window -->
+
+    <div id="modal-wrap">
+      <div id="modal-overlay">
+        <!-- &nsbp; -->
+      </div>
+
+      <div id="modal">
+        <a id="modal-close-button">X</a>
+        <div id="modal-content">
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div id="page-header">
+      Reddit-It
+    </div>
+
+    <div id="explanation-header">
+      <p>Puts Reddit in a table.</p>
+    </div>
+
+    <div id="reload-page-header">
+      <p>Retry<a href="javascript:void(0);"></a></p>
+    </div>
+
+
+
+
+
+    <div id="main-content">
+
+      <div id="content">
+
+
+        <!-- User input -->
+
+        <div class="row-fluid">
+          <div class="form-horizontal">
+            <div id="user-input-element" class="span6">
+
+              <div class="new-insert-anchor">
+                <div class="user-input-element-row">
+                  <div class="remove-user-input-element-button">&#10006;</div>
+                  <div class="input-prepend form-inline">
+
+                    <label class="add-on" for="user-name">User name: </label>
+                    <input type="text" class="span6 user-name" placeholder="Reddit User Name"/>
+
+                    <label class="add-on" for="user-name">Comments: </label>
+                    <input type="number" max="100" min="1" class="span6 number-of-comments" placeholder="100 (max.)"/>
+                    <input type="checkbox" class="do-build-table" checked="true" />
+                  </div>
+                </div>
+              </div>
+
+
+              <button type="button" class="offset4 btn btn-small new-user-name">+ Add another user name</button>
+            </div>
+
+            <div class="span3 offset2">
+              <div id="run-ajax-button"><a href="javascript:void(0);">&#10154</a></div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="vertical-ui-holder">
+          <div class="fold-all-element">Hide all</div>
+          <div class="unfold-all-element">Show all</div>
+        </div>
+
+
+        <!-- <div id="save-for-later-section"> -->
+        <!--   <p>Save this document for later:</p> -->
+        <!-- </div> -->
+
+      </div>
+    </div>
+
+
+    <script type="text/javascript" src="public/js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="public/js/jquery.base64.js"></script>
+    <script type="text/javascript" src="public/js/main.js"></script>
+  </body>
+</html>

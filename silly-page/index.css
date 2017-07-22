@@ -1,0 +1,26 @@
+#content {
+    padding: 5px;
+    width: 640px;
+    margin: 0 auto;
+}
+
+#mainContent { padding: 5px; }
+
+table td {
+    border: 1px solid #000000;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#testButton {
+    border: none;
+    color: #FFFFFF;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+#testButton:hover { opacity: 0.5; }
+
+#mainCanvas {
+    border: 1px solid #888888;
+}

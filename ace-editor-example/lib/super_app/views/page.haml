@@ -1,0 +1,23 @@
+!!!html
+%html
+  %head
+    %meta{:charset => 'utf-8'}
+  %body
+    %h2 Ace Editor Test
+
+    %style{:type => 'text/css'}
+      :plain
+        #editor {
+          position: inline-block;
+          height: 300px;
+          width: auto;
+        }
+
+        #editor-initial-content {
+          display: none;
+        }
+        
+    %div#editor
+    %div#editor-initial-content= preserve @example_text if defined?(@example_text)
+
+    %script{:src => 'assets/app.js', :type => 'text/javascript', :charset => 'utf-8'}

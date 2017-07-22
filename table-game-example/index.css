@@ -1,0 +1,34 @@
+#mainContent {
+    width: 640px;
+    margin: 0 auto;
+}
+
+#mainTable td {
+    cursor: pointer;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background-color: #BBCC00;
+    -moz-transition: all 2s;
+    /* -moz-transform: scale(1); */ /* Causing border issues for some reason */
+}
+
+#mainTable td.scaled{
+    background-color: #AAEE00;
+    z-index: 999999;
+    box-shadow: 0px 10px 8px 0px;
+    -moz-transition: all .25s;
+    -moz-transform: scale(2);
+}
+
+/* Normal DOM elemnt as line */
+/* (Allows attaching listeners, transformations and styling.) */
+div.line {
+    -moz-transform-origin: 0% 100%;
+    height: 3px; /* Line width */
+    background-color: #000000;
+}
+
+div.line:hover {
+    background-color: #FF0000;
+}

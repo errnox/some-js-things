@@ -1,0 +1,8 @@
+#content {
+    width: 640px;
+    margin: auto;
+}
+
+#mainContent { padding: 10px; }
+
+#mainCanvas { border: 1px solid #727272; }

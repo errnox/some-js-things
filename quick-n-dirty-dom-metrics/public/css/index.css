@@ -1,0 +1,19 @@
+
+#main-content {
+  width: 720px;
+  margin: auto;
+}
+
+#metrics-console {
+  padding: 5px;
+  width: 80%;
+  margin: auto;
+  background-color: #cfcfcf;
+  color: #333333;
+}
+
+#log-message {
+  background-color: #ffffff;
+  padding: 5px;
+  margin: 5px;
+}

@@ -1,0 +1,40 @@
+body {
+  background-color: #F1F1E1;
+}
+
+hr .invisible {
+  visibility: hidden;
+}
+
+.editable-field {
+  cursor: text;
+}
+
+.editable-field:after {
+  opacity: 0;
+  content: 'edit';
+}
+.editable-field:focus, .editable-field:active {
+  border: none;
+}
+
+.editable-field:hover:after {
+  padding-left: 5px;
+  color: #B8B8C9;
+  opacity: 1;
+  position: absolute;
+  transition: padding-left 160ms ease-out;
+}
+
+.input-form-element {
+  border: none;
+  /* border-bottom: 2px solid #B8B8C9; */
+  padding: 4px;
+  border-radius: 3px;
+  min-width: 280px;
+  transition: all 120ms ease-out;
+}
+
+.item-view {
+  margin: 10px;
+}

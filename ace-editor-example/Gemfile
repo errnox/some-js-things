@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+# Specify your gem's dependencies in super_app.gemspec
+gemspec
+
+gem 'rack'
+gem 'rack/static'
+gem 'sinatra'
+gem 'sinatra/assets'
+gem 'haml'

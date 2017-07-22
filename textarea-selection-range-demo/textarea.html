@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="" type="text/css" />
+    <meta charset="utf-8"/>
+  </head>
+  
+  <body>
+    <textarea rows=100 cols=100 id="textarea">
+       man is the system's manual pager. Each page argument given  to  man  is
+       normally  the  name of a program, utility or function.  The manual page
+       associated with each of these arguments is then found and displayed.  A
+       section,  if  provided, will direct man to look only in that section of
+       the manual.  The default action is to search in all  of  the  available
+       sections, following a pre-defined order and to show only the first page
+       found, even if page exists in several sections.
+
+       The table below shows the section numbers of the manual followed by the
+       types of pages they contain.
+
+
+       1   Executable programs or shell commands
+       2   System calls (functions provided by the kernel)
+       3   Library calls (functions within program libraries)
+       4   Special files (usually found in /dev)
+       5   File formats and conventions eg /etc/passwd
+       6   Games
+       7   Miscellaneous  (including  macro  packages  and  conventions), e.g.
+           man(7), groff(7)
+       8   System administration commands (usually only for root)
+       9   Kernel routines [Non standard]
+
+       A manual page consists of several sections.
+    </textarea>
+
+    <script type="text/javascript">
+      var textarea = document.querySelector('#textarea');
+      textarea.focus();
+      textarea.setSelectionRange(20, 40);
+
+      window.onmousemove = function(e) {
+        textarea.setSelectionRange(e.clientY * 5, (e.clientY * 5) + 3);
+      };
+    </script>
+    
+    <script type="text/javascript" src="jQuery/jquery-1.11.0.min.js"></script>
+  </body>
+</html>

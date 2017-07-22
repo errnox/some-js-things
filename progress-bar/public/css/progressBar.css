@@ -1,0 +1,23 @@
+/*=======================================================================*/
+/* Progress Bar*/
+/*=======================================================================*/
+
+.progress-bar {
+  width: 250px; /* Default value */
+  position: relative;
+  background-color: #ff0000;
+  border: 1px solid #333;
+}
+
+.progress-bar > span {
+  position: absolute;
+  width: 25px; /* Default value */
+  background-color: #22ee00;
+}
+
+.progress-bar .progress-bar-text {
+  position: relative;
+  display: block;
+  z-index: 10;
+  text-align: center;
+}

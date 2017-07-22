@@ -1,0 +1,11 @@
+#scroll-sticky-element {
+  background-color: #CFCFCF;
+}
+
+.scroll-sticky {
+  background-color: #FF0000 !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
